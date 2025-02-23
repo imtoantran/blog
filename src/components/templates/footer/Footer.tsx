@@ -16,12 +16,12 @@ export const Footer = () => {
         <div className="mt-8">
           {t('footer.powerBy')}{' '}
           <Link
-            href="https://www.contentful.com"
+            href="https://tonydepp.com"
             rel="noopener noreferrer"
             target="_blank"
             className="text-blue500"
           >
-            Contentful
+            tonydepp.com
           </Link>
         </div>
       </Container>
