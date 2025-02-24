@@ -9,6 +9,8 @@ import { Footer } from '@src/components/templates/footer';
 import { Header } from '@src/components/templates/header';
 import initTranslations from '@src/i18n';
 import { locales } from '@src/i18n/config';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export function generateMetadata(): Metadata {
   return {
@@ -63,6 +65,8 @@ export default async function PageLayout({ children, params }: LayoutProps) {
             <div id="portal" className={`${urbanist.variable} font-sans`} />
           </ContentfulPreviewProvider>
         </TranslationsProvider>
+        <Analytics/>
+        <SpeedInsights/>
       </body>
     </html>
   );
